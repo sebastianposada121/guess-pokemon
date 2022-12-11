@@ -1,0 +1,20 @@
+<div class="guess-pokemon">
+
+  <section class="guess-pokemon__pokemon">
+    <h2>who is this pokemon?</h2>
+    <img [src]="guessPokemon?.sprites?.other?.home?.front_default" alt="pokemon">
+  </section>
+
+  <section class="guess-pokemon__panel">
+    <nav class="alert alert--success" *ngIf="showAlert" [ngClass]="{'alert--error': errorGuess}">
+      {{errorGuess ? 'Failed' : 'OK'}}
+    </nav>
+    <h2>Score: {{score}}</h2>
+    <div class="card">
+      <h3>write the name of the pokemon</h3>
+      <input type="text" placeholder="name pokemon" [(ngModel)]="name">
+      <button (click)="guessPokemonByName()">guess</button>
+    </div>
+  </section>
+
+</div>
