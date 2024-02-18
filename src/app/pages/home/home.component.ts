@@ -69,7 +69,7 @@ export class HomeComponent implements OnInit{
         this.score -= 10;
       }
     }
-    setTimeout(() => this.showAlert, 5000);
+    setTimeout(() => this.showAlert = false, 300);
   }
 
   ngOnInit() {
