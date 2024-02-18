@@ -1,4 +1,4 @@
-# SIMPLE PAGE GUESS POKEMON with ANGULAR
+# SIMPLE PAGE GUESS POKEMON CREATED WITH ANGULAR
 ![alt text](image.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
