@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "balaji-web": {
+    "guess-pokemon": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/balaji-web",
+            "outputPath": "dist/guess-pokemon",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -26,7 +26,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
+              "src/favicon.png",
               "src/assets",
               "src/app/shared/assets"
             ],
@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "balaji-web:build:production"
+              "browserTarget": "guess-pokemon:build:production"
             },
             "development": {
-              "browserTarget": "balaji-web:build:development"
+              "browserTarget": "guess-pokemon:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "balaji-web:build"
+            "browserTarget": "guess-pokemon:build"
           }
         },
         "test": {
@@ -90,7 +90,7 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
+              "src/favicon.png",
               "src/assets",
               "src/app/shared/assets"
             ],
